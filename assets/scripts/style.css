@@ -10,23 +10,21 @@
 body{
     font-family: "Poppins" ;
 }
+.logos{
+    font-size:80px;
+    color: white; 
+    font-weight: 450; 
+    padding-left: 100px;
+    margin-bottom: 0;
+
+}
+
+
 nav{
     height: 82px;
     width: 100%;
     box-shadow: 2px 1px 2px #eee;
-
-
-}
-
-label.logo{
-    color: white;
-    font-size: 20px;
-    line-height: 80px;
-    padding-left: 100px;
-    cursor: pointer;
-    font-weight:600;
     
-
 }
 
 nav ul{
@@ -66,27 +64,43 @@ a.active,a:hover{
     cursor: pointer;
     display: none;
 }
+label.logo{
+    color: white;
+    font-size: 25px;
+    line-height: 80px;
+    padding-left: 100px;
+    cursor: pointer;
+    font-weight:600;
+    
 
+}
 #check{
     display: none;
 
 }
+
 
 @media (max-width: 952px){
     label.logo{
         font-size: 30px;
         padding-left: 40px;
     }
+
+    .logos{
+        font-size: 2em;
+    }
     nav ul li a{
         font-size: 16px;
     }
 }
 @media (max-width: 858px){
+    
+      
 
     .checkbtn{
         display: block;
     }
-       
+     
     nav{
         height: 78px;
         box-shadow: 2px 1px 2px #eee;
