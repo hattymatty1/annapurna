@@ -52,3 +52,9 @@ a.active,a:hover{
     cursor: pointer;
     
 }
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+}
