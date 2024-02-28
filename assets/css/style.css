@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -10,14 +11,60 @@
 body{
     font-family: "Poppins" ;
 }
+.moto{
+    font-size: 80px;
+    padding-top: 150px; 
+    padding-bottom: 0px; 
+    padding-right: 80px; 
+    width: 40%;  
+    color: rgb(187, 187, 187);
+    
+}
+
+.moto button{
+    background-color: #ffffff; /* Green */
+    border: none;
+    color: #9c1616;
+    padding: 12px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 30px;
+    
+}
+
+.moto h4:hover{
+    color: #9c1616;
+	margin-left: 20px;
+    transition: all 0.5s ease;
+
+}
+.moto button:hover{
+    color: white;
+    background-color: #9c1616;
+    margin-left: 20px;
+    transition: all 0.5s ease;
+}
+
+
 .logos{
-    font-size:80px;
+    position: relative;
+    font-size:150px;
     color: white; 
     font-weight: 450; 
     padding-left: 80px;
-    margin-bottom: 0;
-    margin-top: 100px;
+    padding-bottom: 0;
+    padding-top: 200px;
 
+}
+
+.logos:hover{
+    position: relative;
+    padding-left: 100px;
+    transition: all 0.5s ease-in-out;
+    color: #666666;
 }
 
 
@@ -25,8 +72,14 @@ nav{
     height: 82px;
     width: 100%;
     box-shadow: 2px 1px 2px #eee;
+    position: fixed;
+    
+    transition: 0.6s;
+    z-index: 100000;
     
 }
+
+    
 
 nav ul{
     float: right;
@@ -43,6 +96,7 @@ nav ul li{
 
 
 nav ul li a{
+    
     color:white;
     font-size: 17px;
     border-radius: 30px;
@@ -51,9 +105,11 @@ nav ul li a{
 }
 
 a.active,a:hover{
-    color: #9c1616;
+    color: #b92f2f;
     cursor: pointer;
     background: none;
+    padding-right: 20px;
+    transition: all 0.5s ease;
     
     
 }
@@ -69,17 +125,29 @@ a.active,a:hover{
 }
 label.logo{
     color: white;
-    font-size: 25px;
-    line-height: 80px;
-    padding-left: 100px;
+    font-size: 30px;
+    padding-top: 25px ;
+    position: fixed;
     cursor: pointer;
     font-weight:600;
+    
+
+    
     
 
 }
 #check{
     display: none;
 
+}
+.hr1{
+    color: red;
+    width: 50%;
+    margin-inline-end: 0;
+}
+.hands:hover{
+    padding-left: 15px;
+    transition:all 0.5s ease;
 }
 
 
@@ -141,6 +209,53 @@ label.logo{
     }
 }
 
+.intro{
+    
+    font-size: 40px;
+    padding-top: 350px;
+    margin-left: 300px;
+    color: rgb(179, 156, 156);
+    width: 50%;
+    
+    
+}
+
+.intro h2{
+    color: #eee;
+    font-size: 60px;
+    
+
+}
+.intro h4{
+    font-size: 25px;
+}
+.intropic{
+    padding-top: 250px;
+    padding-bottom: 320px;
+    
+}
+
+.container5{
+    padding-bottom: 350px;
+}
+.about h2{
+    font-size: 50px;
+    color: white;
+    padding-left: 300px;
+    
+    margin-top: 150px;
+
+}
+
+.about h3{
+    color: rgb(179,156,156);
+    font-size: 25px;
+    padding-left: 300px;
+    padding-right: 300px;
+    
+}
+    
+
 /*
 footer css
 */
@@ -151,33 +266,48 @@ body{
     
 }
 *{
-    background-color: black;
+    
 	margin:0;
 	padding:0;
+    background: #000000;
 	box-sizing: border-box;
     
 }
 .container{
+    background: #000000;
+
+}
+.container2{
 	max-width: 100%;
     padding-left: 80px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    
 	
 }
+.slide1{
+    display: flex;
+}  
+
 .row{
 	display: flex;
 	flex-wrap: wrap;
+ 
     
 }
 ul{
 	list-style: none;
+    
 }
 .footer{
-	background-color: #24262b;
+	background-color: #000000;
     
     
 }
 .footer-col{
    width: 25%;
    padding: 0px 15px;
+   
 }
 .footer-col h4{
 	font-size: 18px;
@@ -186,6 +316,7 @@ ul{
 	margin-bottom: 35px;
 	font-weight: 500;
 	position: relative;
+    
 }
 .footer-col h4::before{
 	content: '';
@@ -210,6 +341,7 @@ ul{
 	display: block;
     border-radius: 20px;
 	transition: all 0.3s ease;
+    padding-bottom: 10px;
 }
 .footer-col ul li a:hover{
 	color: #9c1616;
@@ -221,17 +353,19 @@ ul{
 	display: inline-block;
 	height: 40px;
 	width: 40px;
-	background-color: rgba(255,255,255,0.2);
+	background-color: rgba(179, 174, 174, 0.2);
 	margin:0 10px 10px 0;
 	text-align: center;
 	line-height: 40px;
 	border-radius: 50%;
 	color: #ffffff;
 	transition: all 0.5s ease;
+    
 }
 .footer-col .social-links a:hover{
 	color: #ffffff;
-	background-color: #000000;
+	background-color: #645f5f;
+
 }
 
 /*responsive*/
@@ -255,4 +389,84 @@ ul{
     .footer-col{
         width: 100%;
 }
+
+
+}
+.stickybutton{
+    position: fixed;  
+    bottom:100px;  
+    right: 100px;
+    background: none;
+
+}
+.stickybutton button{
+    background-color: #9c1616; /* Green */
+    border: none;
+    color: #ffffff;
+    padding: 20px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 30px;
+    text-decoration: none;
+    
+    
+}
+
+.stickybutton button:hover{
+    box-shadow: #e91e63 2px 2px 3px;
+    transition: all 0.5s ease;
+}
+.team{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 0px;
+}
+.jasmin img{
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+
+.shivansh img{
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.sourav img{
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+
+}
+
+.pics {
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    text-align: center;
+    padding-top:100px;
+    
+}
+
+.jasmin h1, .shivansh h1, .sourav h1{
+    padding-top: 30px ;
+}
+
+.jasmin img:hover, .shivansh img:hover, .sourav img:hover{
+    width: 350px;
+    height: 350px;
+    transition: all 0.5s ease-in-out;
+    box-shadow: #7c7c7c 7px 7px 7px;
+    
+
+}
+.jasmin p, .shivansh p, .sourav p{
+    padding-top: 25px;
+    padding-bottom: 250px;
+    
 }
